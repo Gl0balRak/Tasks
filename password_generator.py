@@ -1,2 +1,0 @@
-import random, string
-for each in (lambda x, y: (lambda z: [z[i:i+x] for i in range(0, x*y, x)])("".join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for i in range(x*y))))(int(input("Введите кол-во символов в пароле: ")), int(input("Введите кол-во паролей: "))): print(each)
